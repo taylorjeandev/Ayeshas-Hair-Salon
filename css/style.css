@@ -1,0 +1,123 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body{
+  background: black;
+  color: white;
+}
+a{
+  color: white;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  border: 5px black solid;
+
+}
+nav li{
+  display: inline;
+  margin: 0 15px;
+}
+h1{
+  font-size: 100px;
+  width: 50%;
+  color: white;
+  font-family: mulish;
+  font-weight: 200;
+}
+main section{
+  display: flex;
+  flex-wrap: nowrap;
+}
+main section img{
+  width: 50%;
+}
+.talent{
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+  justify-content: center;
+  align-content: center;
+
+}
+.welcome{
+  display: flex;
+  flex-wrap: wrap;
+}
+.welcome h2{
+  width: 50%;
+  justify-content: center;
+  font-size: 50px;
+  font-family: mulish;
+  font-weight: 400;
+}
+.welcome p{
+  width: 50%;
+}
+.welcome a{
+  list-style: none;
+}
+
+.hairDressers{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+section.hairDressers section {
+  width: 33%;
+}
+.beautyProducts{
+  margin-top: 18px;
+}
+section.welcome p{
+  padding-top: 25px;
+}
+.momentum{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.momentum h2{
+    font-size: 50px;
+    color: white;
+    font-family: mulish;
+    font-weight: 400
+  }
+
+section.momentum img{
+  margin-top: 100px;
+}
+/* footer {
+
+} */
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
